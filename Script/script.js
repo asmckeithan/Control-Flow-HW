@@ -16,14 +16,14 @@ console.log(totalPlants )
 
 
 let plants = 20;
-let week = "1";
+let week = "3";
 switch (week) {
    case "1":
        console.log(`Week 1:${plants * 2}`);
        break;
    case "2":
        console.log(`Week 2:${plants * 4}`);
-       break;
+    
    case "3":
        console.log(`Week 3:${plants * 8}`);
        break
