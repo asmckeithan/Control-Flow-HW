@@ -56,10 +56,25 @@ if (week3 > Min1 && week3 < Pmax)
     console.log("Plant more Crops")
 }
 
-console.log("Part 2 : ==============================")
+console.log("Part 2 :Thinking Bigger ==============================")
 let y = 2**10
 console.log(y)
 let week10 = y*100
 console.log(week10)
 if (week10 > totalPlants){
     console.log(`Additional Area Need:${((week10 * area)/totalPlants)-totalPlants}sq`)}
+// we solve for x by taking looking at it like this totalplants/area = totalplants(Part2)/ x. Criss Cross to solve for x 
+console.log("Part 3 : Errors in Judgement ==============================")
+
+ try {
+    const addArea = (((week10 * area)/totalPlants)-totalPlants)
+    if (addArea > area) {
+      throw `The Additional Area needed to plant ${addArea} is greater than ${area}`
+    }
+    console.log("Continue to Prune, Monitor, and Plant")
+  } catch (error) {
+    //Practical Example: give the user a pop-up letting them know there was a error 
+    console.log(`The catch block is being executed with this error: ${error}`)
+  }
+  
+  console.log("Does this log?")
