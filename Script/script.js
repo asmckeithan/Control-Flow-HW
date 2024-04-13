@@ -13,9 +13,10 @@ const totalPlants = area/.8
 console.log(totalPlants )
  
 
-
-
-const week1 = 20 * 2;
+console.log("(X) refelcts the number of weeks being doudbled ")
+let x = 2**1
+const week1 = x * 20
+console.log(week1)
 const week2 = week1 * 2;
 const week3 = week2 * 2;
 console.log(`Week 1:${week1}\nWeek 2:${week2}\nWeek 3:${week3}`)
@@ -55,4 +56,10 @@ if (week3 > Min1 && week3 < Pmax)
     console.log("Plant more Crops")
 }
 
-    
+console.log("Part 2 : ==============================")
+let y = 2**10
+console.log(y)
+let week10 = y*100
+console.log(week10)
+if (week10 > totalPlants){
+    console.log(`Additional Area Need:${((week10 * area)/totalPlants)-totalPlants}sq`)}
